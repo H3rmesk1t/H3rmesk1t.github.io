@@ -8,28 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <meta name="description" content="Programming Languages静态程序分析是编程语言中应用层面下的一个细分领域，它是一个非常重要的核心内容。 Programming Languages可以大致分为三个部分：  在理论部分，考虑的是如何设计一个语言的语法和语义，如何设计语言的类型系统等等问题。 在环境部分，由于已经有了语言的语法、语义和类型系统，需要支撑语言的运行，因此需要考虑如何为运行中的程序提供运行时环境，即如何设">
 <meta property="og:type" content="article">
-<meta property="og:title" content="南大软件分析学习笔记 - 介绍">
-<meta property="og:url" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/index.html">
+<meta property="og:title" content="南大软分学习笔记-Introduction">
+<meta property="og:url" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/index.html">
 <meta property="og:site_name" content="H3rmesk1t&#39;s Blog">
 <meta property="og:description" content="Programming Languages静态程序分析是编程语言中应用层面下的一个细分领域，它是一个非常重要的核心内容。 Programming Languages可以大致分为三个部分：  在理论部分，考虑的是如何设计一个语言的语法和语义，如何设计语言的类型系统等等问题。 在环境部分，由于已经有了语言的语法、语义和类型系统，需要支撑语言的运行，因此需要考虑如何为运行中的程序提供运行时环境，即如何设">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729694621188-c5cda1e1-c406-467e-996e-ebb32820f71c.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729697168476-7b4c3be6-77ba-47b1-a1de-dffecce72a27.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729697587651-51486139-8a8b-4d1d-a491-50045373b7bf.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729698633761-e775ff4f-94e4-4861-8e7a-d42dcf385103.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729698818693-ca38fd56-9d25-403a-a187-6a8af3e2e397.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729700169457-c6f3b9f4-e926-415a-8d4b-437b6c1348fc.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729700566139-5c282687-b942-4130-b118-9d0e51bd5fdf.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729700963485-a209566c-c4dc-4c98-a746-3d93bc778435.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729701401089-9582fb6d-6dc7-4609-a4f4-cbff1e7f24cc.png">
-<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729701339427-88fedb44-b37d-4690-88cf-476679c0d109.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729694621188-c5cda1e1-c406-467e-996e-ebb32820f71c.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729697168476-7b4c3be6-77ba-47b1-a1de-dffecce72a27.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729697587651-51486139-8a8b-4d1d-a491-50045373b7bf.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729698633761-e775ff4f-94e4-4861-8e7a-d42dcf385103.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729698818693-ca38fd56-9d25-403a-a187-6a8af3e2e397.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729700169457-c6f3b9f4-e926-415a-8d4b-437b6c1348fc.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729700566139-5c282687-b942-4130-b118-9d0e51bd5fdf.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729700963485-a209566c-c4dc-4c98-a746-3d93bc778435.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729701401089-9582fb6d-6dc7-4609-a4f4-cbff1e7f24cc.png">
+<meta property="og:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729701339427-88fedb44-b37d-4690-88cf-476679c0d109.png">
 <meta property="article:published_time" content="2024-10-23T16:40:00.000Z">
-<meta property="article:modified_time" content="2024-10-23T16:44:28.827Z">
+<meta property="article:modified_time" content="2024-10-23T16:51:47.551Z">
 <meta property="article:author" content="H3rmesk1t">
 <meta property="article:tag" content="静态代码分析">
 <meta property="article:tag" content="南大软分学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729694621188-c5cda1e1-c406-467e-996e-ebb32820f71c.png">
+<meta name="twitter:image" content="https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729694621188-c5cda1e1-c406-467e-996e-ebb32820f71c.png">
     
     
       
@@ -49,7 +49,7 @@
       
     
     <!-- title -->
-    <title>南大软件分析学习笔记 - 介绍</title>
+    <title>南大软分学习笔记-Introduction</title>
     <!-- async scripts -->
     <!-- Google Analytics -->
 
@@ -110,17 +110,17 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&text=南大软件分析学习笔记 - 介绍"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&is_video=false&description=南大软件分析学习笔记 - 介绍"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=南大软件分析学习笔记 - 介绍&body=Check out this article: https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&name=南大软件分析学习笔记 - 介绍&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&t=南大软件分析学习笔记 - 介绍"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&text=南大软分学习笔记-Introduction"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&is_video=false&description=南大软分学习笔记-Introduction"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=南大软分学习笔记-Introduction&body=Check out this article: https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&name=南大软分学习笔记-Introduction&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&t=南大软分学习笔记-Introduction"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -140,7 +140,7 @@
   <header>
     
     <h1 class="posttitle p-name" itemprop="name headline">
-        南大软件分析学习笔记 - 介绍
+        南大软分学习笔记-Introduction
     </h1>
 
 
@@ -184,7 +184,7 @@
 <li><strong><font style="color:#000000;">在环境部分</font></strong><font style="color:#000000;">，由于已经有了语言的语法、语义和类型系统，需要支撑语言的运行，因此需要考虑如何为运行中的程序提供运行时环境，即如何设计编译器，在运行时需要怎样的支持（如内存的分配管理）等等。</font></li>
 <li><strong><font style="color:#000000;">在应用部分</font></strong><font style="color:#000000;">，则需要关注如何保证语言所写出程序的效率、安全性和可靠性，主要考虑如何对程序进行分析，验证和合成（如何自动合成一个程序）。</font></li>
 </ul>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729694621188-c5cda1e1-c406-467e-996e-ebb32820f71c.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729694621188-c5cda1e1-c406-467e-996e-ebb32820f71c.png"></p>
 <h2 id="Background-Challenge"><a href="#Background-Challenge" class="headerlink" title="Background &amp; Challenge"></a>Background &amp; Challenge</h2><p><font style="color:#000000;">Background: In the last decade, the language cores had few changes, but </font><strong><font style="color:#000000;">the programs became significantly larger and more complicated</font></strong><font style="color:#000000;">.</font></p>
 <p><font style="color:#000000;">Challenge: How to ensure the </font><strong><font style="color:#000000;">reliability, security and other promises</font></strong><font style="color:#000000;"> of large-scale and complex programs?</font></p>
 <h2 id="Necessity"><a href="#Necessity" class="headerlink" title="Necessity"></a>Necessity</h2><ul>
@@ -206,15 +206,15 @@
 <p><strong>Rice’s Theorem: Any non-trivial property of the behavior of programs in a r.e. language is undecidable.</strong></p>
 </blockquote>
 <p><font style="color:#000000;">Rice’s Theorem（莱斯定理）证明，对于任何非平凡的部分函数属性，不存在一种通用且有效的方法来决定一个算法是否计算具有该属性的部分函数。换句话说，</font><strong><font style="color:#000000;">没有有效的方法仅通过查看程序代码即可确定函数的非平凡属性</font></strong><font style="color:#000000;">（即上述示例中提到的空指针引用、隐私信息泄露等）。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729697168476-7b4c3be6-77ba-47b1-a1de-dffecce72a27.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729697168476-7b4c3be6-77ba-47b1-a1de-dffecce72a27.png"></p>
 <p><font style="color:#000000;">进一步理解，在下图中，莱斯定理指出不存在一个Perfect Static Analysis（例如空指针问题中，Perfect Static Analysis指的就是能够准确地给出是否存在空指针漏洞，存在几个空指针漏洞等）。</font></p>
 <p><strong><font style="color:#000000;">一个Perfect Static Analysis必须满足Sound又Complete</font></strong><font style="color:#000000;">。具体地说， Truth可以理解为程序中有N个空指针漏洞；Sound表示报告包含了所有的真实错误，但可能包含了误报的错误；Complete表示报告包含的错误都是真实的错误，但可能并未包含全部的错误。那么Sound、Truth和Complete之间的关系为</font><strong><font style="color:#000000;">Complete ⊆ Truth ⊆ Sound</font></strong><font style="color:#000000;">，Sound称之为over-approximate，Complete称之为under-approximate。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729697587651-51486139-8a8b-4d1d-a491-50045373b7bf.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729697587651-51486139-8a8b-4d1d-a491-50045373b7bf.png"></p>
 <p><font style="color:#000000;">既然不存在Perfect Static Analysis，即无法同时满足Sound和Complete，那么可以妥协其中一方，在某种程度上牺牲Sound或Complete中的一个，即Useful Static Analysis。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729698633761-e775ff4f-94e4-4861-8e7a-d42dcf385103.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729698633761-e775ff4f-94e4-4861-8e7a-d42dcf385103.png"></p>
 <p><font style="color:#000000;">在Useful Static Analysis中，妥协soundness，会造成false negatives（漏报）；妥协completeness，会造成false positives（误报）。</font></p>
 <p><font style="color:#000000;">通常情况下，</font><strong><font style="color:#000000;">静态分析时总是选择牺牲completeness，保全soundness</font></strong><font style="color:#000000;">。即，宁可有误报，也不漏掉一个正确结果。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729698818693-ca38fd56-9d25-403a-a187-6a8af3e2e397.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729698818693-ca38fd56-9d25-403a-a187-6a8af3e2e397.png"></p>
 <p><font style="color:#000000;">那么为什么总选择保全Soundness呢？</font></p>
 <ol>
 <li><strong><font style="color:#000000;">Soundness is critical to a collection of important (static-analysis) applications</font></strong><font style="color:#000000;">, such as compiler optimization and program verification.</font></li>
@@ -226,15 +226,15 @@
 <li><font style="color:#000000;">x等于1或0。</font></li>
 </ul>
 <p><font style="color:#000000;">但是这两个分析都是sound的，区别在于，前者结果更精确，但是耗时长；后者结果不精确，但是速度快。因此，</font><strong><font style="color:#000000;">静态分析时通常需要尽力确保soundness，并在precision和speed之间做取舍</font></strong><font style="color:#000000;">。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729700169457-c6f3b9f4-e926-415a-8d4b-437b6c1348fc.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729700169457-c6f3b9f4-e926-415a-8d4b-437b6c1348fc.png"></p>
 <h2 id="Abstraction-Over-approximation"><a href="#Abstraction-Over-approximation" class="headerlink" title="Abstraction &amp; Over-approximation"></a><font style="color:#000000;">Abstraction &amp; Over-approximation</font></h2><p><font style="color:#000000;">大多数静态分析都可以用abstraction和over-approximation两个词概括，而后者又包含transfer functions和control flows。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729700566139-5c282687-b942-4130-b118-9d0e51bd5fdf.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729700566139-5c282687-b942-4130-b118-9d0e51bd5fdf.png"></p>
 <p><strong><font style="color:#000000;">Abstraction是指将变量从concrete domain映射到abstract domain（符合集合）</font></strong><font style="color:#000000;">，方便后续处理。由于在程序中，变量很可能是不确定的（unknown）或非法、未定义（undefined）的。因此，</font><strong><font style="color:#000000;">abstract domain包含五类符号+−O⊤⊥，其中⊤表示unknown，⊥表示undefined</font></strong><font style="color:#000000;">。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729700963485-a209566c-c4dc-4c98-a746-3d93bc778435.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729700963485-a209566c-c4dc-4c98-a746-3d93bc778435.png"></p>
 <p><font style="color:#000000;">Over-approximation中的transfer functions定义了怎样在abstract values上对程序语句求值。transfer functions通常根据要分析的问题和程序语句相关的语义确定。对于算数运算，相关的transfer functions可以由算术运算规则和特性生成。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729701401089-9582fb6d-6dc7-4609-a4f4-cbff1e7f24cc.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729701401089-9582fb6d-6dc7-4609-a4f4-cbff1e7f24cc.png"></p>
 <p><font style="color:#000000;">Over-approximation中的control flows指的是，在实际场景中进行控制流相关的静态分析时，由于无法枚举所有路径，我们通常采用flow merging（一种over-approximation的方式）来处理。</font></p>
-<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/1729701339427-88fedb44-b37d-4690-88cf-476679c0d109.png"></p>
+<p><img src="/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/1729701339427-88fedb44-b37d-4690-88cf-476679c0d109.png"></p>
 
   </div>
 </article>
@@ -276,17 +276,17 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&text=南大软件分析学习笔记 - 介绍"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&is_video=false&description=南大软件分析学习笔记 - 介绍"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=南大软件分析学习笔记 - 介绍&body=Check out this article: https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&title=南大软件分析学习笔记 - 介绍"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&name=南大软件分析学习笔记 - 介绍&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E4%BB%B6%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E4%BB%8B%E7%BB%8D/&t=南大软件分析学习笔记 - 介绍"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&text=南大软分学习笔记-Introduction"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&is_video=false&description=南大软分学习笔记-Introduction"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=南大软分学习笔记-Introduction&body=Check out this article: https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&title=南大软分学习笔记-Introduction"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&name=南大软分学习笔记-Introduction&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://h3rmesk1t.github.io/2024/10/24/%E5%8D%97%E5%A4%A7%E8%BD%AF%E5%88%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-Introduction/&t=南大软分学习笔记-Introduction"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
